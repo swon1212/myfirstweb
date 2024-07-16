@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>나를 소개합니다</title>
+    <meta charset="utf-8"
+</head>
+    <style>
+        h1 {
+           text-align: center; border-width: 7px; border-color: palevioletred; border-style: solid; padding: 20px; margin: 20px}
+           
+         a  { color:rgb(226, 100, 196);text-decoration: underline;}
+        h2 { border-width: 6px; border-color:rgb(193, 42, 72); border-style: solid}
+        div {border: 5px solid gray; display: grid; grid-template-columns: 100px, 1fr;
+        }
+
+        #gri{
+            border:5px solid pink
+
+        }
+        @media(max-width:700px){
+            #gri{
+                display:none
+            }
+        }
+
+
+    </style>
+
+    <script>
+        document.write(1+1);
+    </script>
+
+<body>
+    <h1>김상원</h1>
+    <img src="202407122036163510_1.webp" width="300">
+    <p>
+    <h2>저는 프로미스나인의 팬입니다<br>저는 그 중에서도 송하영을 가장 좋아합니다</h2>
+    
+    </p>
+    <div id="gri">
+        <div>프로미스나인 송하영은 정말 귀엽습니다</div>
+        <div>그녀는 메인보컬이며 메인댄서입니다</div>
+    </div>
+    <input type="button"
+    value="button"
+    onclick="alert('hello')">
+
+    <input type="text"
+    onchange="alert('changed')">
+
+    <h3>프로미스나인은 플레디스 엔터테인먼트 소속 걸그룹입니다. 프로미스나인은 현재 실력 논란이 없는 유일한 하이브 걸그룹입니다. <a href="https://www.pledis.co.kr/artist/detail/fromisnine/">(fromis_9)</a></a></h3>
+
+    <input type="button"
+    value="day" onclick="
+    
+    if(document.querySelector('body').dataset.mode ==='night'){
+        document.querySelector('body').style.backgroundColor ='white';
+        document.querySelector('body').style.color ='black';
+        
+        document.querySelector('body').dataset.mode='day';
+        this.value='day'
+     }
+     else{
+        document.querySelector('body').style.backgroundColor ='black';
+        document.querySelector('body').style.color ='white';
+        
+        document.querySelector('body').dataset.mode='night';
+        this.value='night'}
+
+    "
+
+
+</body>
+
+</html>
